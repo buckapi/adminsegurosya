@@ -71,7 +71,7 @@ export class DataApiService {
 
 	 
 	getAllCategory() {
-		const url_api = this.yeoman.origin.restUrl + '/api/collections/svbCategories/records';
+		const url_api = this.yeoman.origin.restUrl + '/api/collections/syCategories/records';
 		return this.http.get(url_api);
 	  }
 	  getAllBrand(){
@@ -80,7 +80,7 @@ export class DataApiService {
 	  }
 	  
 	getAllProducts(){
-		const url_api = this.yeoman.origin.restUrl+'/api/collections/svbProducts/records';
+		const url_api = this.yeoman.origin.restUrl+'/api/collections/syProducts/records';
 		return this.http.get(url_api);
 	}
 	getAllTestimonials(){
@@ -158,7 +158,7 @@ export class DataApiService {
 		);
 	  }
 	  saveCategory( category: CategoryInterface) {
-		const url_api = this.yeoman.origin.restUrl + '/api/collections/svbCategories/records';
+		const url_api = this.yeoman.origin.restUrl + '/api/collections/syCategories/records';
 		return this.http.post<CategoryInterface>(url_api, category).pipe(
 		  map(data => data)
 		);
@@ -210,7 +210,7 @@ export class DataApiService {
 	  }
 	productUpdate(clientData: any, id: string): Observable<any> {
 		// Construir la URL de la solicitud
-		const url = `https://db.buckapi.com:8090/api/collections/svbProducts/records/${id}`;
+		const url = `https://db.buckapi.com:8090/api/collections/syProducts/records/${id}`;
 	
 		// Realizar la solicitud PATCH para actualizar el registro
 		return this.http.patch(url, clientData).pipe(

@@ -1,9 +1,9 @@
 <section id="clientes" [hidden]="virtualRouter.routerActive!=='clientes'">
     <div class="container">
-        <h2 class="section-title wow fadeInUp" [hidden]="isEditing || global.addingProduct">Productos
+        <h2 class="section-title wow fadeInUp" [hidden]="isEditing || global.addingProduct">Seguros
             <span style="color: #FF4C60;" class="icon icon-plus iconB" (click)="add()"></span>
         </h2>
-        <h2 class="section-title wow fadeInUp" [hidden]="!global.addingProduct">Agregar producto
+        <h2 class="section-title wow fadeInUp" [hidden]="!global.addingProduct">Agregar seguro
         </h2>
         <div class="spacer" data-height="60" [hidden]="global.addingProduct || editing"></div>
         <span> </span>
@@ -101,20 +101,20 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label for="event-name">Nombre del producto</label>
-                                            <input class="form-control" placeholder="nombre del producto" type="text"
+                                            <label for="event-name">Nombre del seguro</label>
+                                            <input class="form-control" placeholder="nombre del seguro" type="text"
                                                 [(ngModel)]="data.name" name="name" required
                                                 [ngModelOptions]="{standalone: true}">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="description">Descripción del producto</label>
+                                    <label for="description">Descripción del seguro</label>
                                     <textarea class="form-control" placeholder="descripción"
-                                        [(ngModel)]="data.description" name="description del producto" required
+                                        [(ngModel)]="data.description" name="description del seguro" required
                                         [ngModelOptions]="{standalone: true}"></textarea>
                                 </div>
-                                <div class="row">
+                               <!--  <div class="row">
                                     <div class="col-md-4">
                                     
                                         <div class="form-group">
@@ -205,7 +205,6 @@
                                 <div class="row pb-20">
                                     <div class="col-md-8">
                                         <div class="form-group">
-                                            <!-- <input type="checkbox" id="showColors" [checked]="isChecked()" (change)="showColors = !showColors" [hidden]="global.editingProduct"> -->
                                             <label for="showColors" style="margin-left: 5px;">Colores
                                                 <span *ngIf="showColors" style="color: #FF4C60; width: 20px; height: 20px; font-size: 20px; margin-left: 5px; float: right;" class="icon icon-plus iconB" (click)="openModal()"></span>
                                             
@@ -237,7 +236,7 @@
                                           </div>
                                     </div>
                                 </div>
-                                
+                                 -->
                             </div>
 
 
