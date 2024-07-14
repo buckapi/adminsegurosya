@@ -562,7 +562,7 @@ export class GlobalService {
   }
   getClientes(): Observable<any> {
     const url_api =
-      this.yeoman.origin.restUrl + "/api/collections/svbProducts/records";
+      this.yeoman.origin.restUrl + "/api/collections/syProducts/records";
     return this.http.get<any>(url_api);
   }
   getColors(): Observable<any> {

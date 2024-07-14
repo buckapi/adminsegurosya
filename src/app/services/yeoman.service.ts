@@ -6,9 +6,11 @@ import { Injectable } from '@angular/core';
 export class Yeoman {
   allcategory:any=[];
   allbrands:any=[];
+  allproducts:any=[];
 
   allCategoriesSize:number=0;
-  
+  allProductsSize:number=0;
+
   posts:any=[];
   categories:any=[];
   brands:any=[];

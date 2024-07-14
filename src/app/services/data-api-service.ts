@@ -132,14 +132,14 @@ export class DataApiService {
 		.pipe(map(data => data));
 	}
 	saveProduct(product :ProductInterface){
-		const url_api=	this.yeoman.origin.restUrl+'/api/products';
+		const url_api=	this.yeoman.origin.restUrl+'/api/collections/syProducts/records';
 		return this.http
 		.post<ProductInterface>(url_api, product)
 		.pipe(map(data => data));
 	}
 
 	saveClient(client: ClientInterface) {
-		const url_api = this.yeoman.origin.restUrl + '/api/collections/svbProducts/records';
+		const url_api = this.yeoman.origin.restUrl + '/api/collections/syProducts/records';
 		return this.http.post<ClientInterface>(url_api, client).pipe(
 		  map(data => data)
 		);

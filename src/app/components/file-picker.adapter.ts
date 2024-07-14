@@ -13,7 +13,7 @@ import { GlobalService } from "@app/services/global.service";
 
 export class CustomFilePickerAdapter extends FilePickerAdapter {
   private uploadUrl =
-    "https://db.buckapi.com:8090/api/collections/svbImages/records";
+    "https://db.buckapi.com:8090/api/collections/syImages/records";
 
   constructor(
     private http: HttpClient,

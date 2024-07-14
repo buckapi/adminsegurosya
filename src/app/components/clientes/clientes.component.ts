@@ -95,6 +95,7 @@ showDeleteButton: boolean = false;
 
     
     this.getAllCategories();
+    this.getAllProducts();
     this.getAllBrands();
     this.dropdownSettings = {
       singleSelection: false,
@@ -389,6 +390,15 @@ showDeleteButton: boolean = false;
       this.yeoman.categories = this.yeoman.categories.items;
       this.yeoman.allcategory = this.yeoman.allcategory.items;
       this.yeoman.allCategoriesSize = this.yeoman.categories.length;
+    });
+  }
+  getAllProducts() {
+    this.dataApiService.getAllProducts().subscribe((response) => {
+      this.yeoman.products = response;
+      this.yeoman.allproducts = response;
+      this.yeoman.products = this.yeoman.products.items;
+      this.yeoman.allproducts = this.yeoman.allproducts.items;
+      this.yeoman.allProductsSize = this.yeoman.products.length;
     });
   }
   getAllBrands() {
