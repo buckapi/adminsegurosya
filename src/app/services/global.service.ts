@@ -208,6 +208,7 @@ export class GlobalService {
   rubroSelectedBoolean: boolean = false;
   postsPreview: boolean = true;
   categories: any[] = [];
+  requests: any[] = [];
   categorySelected: any;
   currentPage: number = 1;
   totalProducts: number = 0;
@@ -563,6 +564,11 @@ export class GlobalService {
   getClientes(): Observable<any> {
     const url_api =
       this.yeoman.origin.restUrl + "/api/collections/syProducts/records";
+    return this.http.get<any>(url_api);
+  }
+  getRequest(): Observable<any> {
+    const url_api =
+      this.yeoman.origin.restUrl + "/api/collections/syRequest/records";
     return this.http.get<any>(url_api);
   }
   getColors(): Observable<any> {

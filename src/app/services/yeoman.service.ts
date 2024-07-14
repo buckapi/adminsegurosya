@@ -15,6 +15,7 @@ export class Yeoman {
   categories:any=[];
   brands:any=[];
   types:any=[];
+  requests:any=[];
 
   all:any=[];
   articulos:any[][]=[];

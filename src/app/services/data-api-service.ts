@@ -83,6 +83,10 @@ export class DataApiService {
 		const url_api = this.yeoman.origin.restUrl+'/api/collections/syProducts/records';
 		return this.http.get(url_api);
 	}
+	getAllRequest(){
+		const url_api = this.yeoman.origin.restUrl+'/api/collections/syRequest/records';
+		return this.http.get(url_api);
+	}
 	getAllTestimonials(){
 		const url_api = this.yeoman.origin.restUrl+'/api/testimonials';
 		return this.http.get(url_api);
@@ -93,6 +97,10 @@ export class DataApiService {
 	}
 	getClients() {
 		const url_api = this.yeoman.origin.restUrl+'/api/collections/svbProducts/records';
+		return this.http.get(url_api);
+	}
+	getRequest() {
+		const url_api = this.yeoman.origin.restUrl+'/api/collections/syRequest/records';
 		return this.http.get(url_api);
 	}
 	getProduct(id: string){
